@@ -1,5 +1,6 @@
 [Unit]
 Description=Starts Transcode
 [Service]
-Type=oneshot
 ExecStart=/usr/bin/transcode.sh
+[Install]
+WantedBy=multi-user.target
